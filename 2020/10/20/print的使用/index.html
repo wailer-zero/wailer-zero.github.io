@@ -22,15 +22,15 @@
     var CONFIG = {"hostname":"wailer-zero.github.io","root":"/","scheme":"Pisces","version":"8.0.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
-  <meta name="description" content="print()的使用print(&quot;hello python&quot;) 单双引号无所谓print(&quot;hello&quot;);print(&quot;world&quot;) “;”的使用可以在同一行写代码">
+  <meta name="description" content="print()的使用print(&quot;hello python&quot;)             单双引号无所谓print(&quot;hello&quot;);print(&quot;world&quot;)     “;”的使用可以在同一行写代码">
 <meta property="og:type" content="article">
 <meta property="og:title" content="print的使用">
 <meta property="og:url" content="https://wailer-zero.github.io/2020/10/20/print%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Wailer">
-<meta property="og:description" content="print()的使用print(&quot;hello python&quot;) 单双引号无所谓print(&quot;hello&quot;);print(&quot;world&quot;) “;”的使用可以在同一行写代码">
+<meta property="og:description" content="print()的使用print(&quot;hello python&quot;)             单双引号无所谓print(&quot;hello&quot;);print(&quot;world&quot;)     “;”的使用可以在同一行写代码">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-10-20T04:48:40.000Z">
-<meta property="article:modified_time" content="2020-10-22T08:22:22.799Z">
+<meta property="article:modified_time" content="2020-10-22T08:28:48.470Z">
 <meta property="article:author" content="wailer-zero">
 <meta property="article:tag" content="python_base">
 <meta property="article:tag" content="print">
@@ -295,7 +295,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2020-10-22 16:22:22" itemprop="dateModified" datetime="2020-10-22T16:22:22+08:00">2020-10-22</time>
+        <time title="修改时间：2020-10-22 16:28:48" itemprop="dateModified" datetime="2020-10-22T16:28:48+08:00">2020-10-22</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -317,7 +317,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="print-的使用"><a href="#print-的使用" class="headerlink" title="print()的使用"></a>print()的使用</h1><p><code>print(&quot;hello python&quot;)</code> 单双引号无所谓<br><code>print(&quot;hello&quot;);print(&quot;world&quot;)</code> “;”的使用可以在同一行写代码</p>
+        <h1 id="print-的使用"><a href="#print-的使用" class="headerlink" title="print()的使用"></a>print()的使用</h1><p><code>print(&quot;hello python&quot;)</code>             单双引号无所谓<br><code>print(&quot;hello&quot;);print(&quot;world&quot;)</code>     “;”的使用可以在同一行写代码</p>
 <a id="more"></a>
 
 <p>*<em>print(self, <em>args, sep=’ ‘, end=’\n’, file=None)</em></em><br>这是python中print()的用法 sep是逗号的替换，end是结尾操作</p>
@@ -325,44 +325,7 @@
 <h2 id="常用的转移字符有"><a href="#常用的转移字符有" class="headerlink" title="常用的转移字符有"></a>常用的转移字符有</h2><pre><code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\		-- 续航符</span><br><span class="line">\\		-- 反斜杠符号</span><br><span class="line">\&#39;		-- 单引号</span><br><span class="line">\&quot;		-- 双引号</span><br><span class="line">\a 		-- 响铃</span><br><span class="line">\b 		-- 退格</span><br><span class="line">\e 		-- 转移</span><br><span class="line">\000	-- 空	</span><br><span class="line">\n 		-- 换行</span><br><span class="line">\v		-- 纵向制表符</span><br><span class="line">\t 		-- 横向制表符</span><br><span class="line">\r 		-- 换行 光标在上一行</span><br><span class="line">\f 		--换页</span><br></pre></td></tr></table></figure></code></pre>
 <p>反转义 <code>print(r&#39;hello \n&#39;)</code></p>
 <h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><p>‘+’可以实现字符串的拼接<br><code>print(&quot;hellp&quot;+&quot;world&quot;)</code></p>
-<p>格式化输出<br>    - 使用占位符<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age &#x3D; 10</span><br><span class="line">print(&#39;他的年龄是%d&#39; % (age))</span><br></pre></td></tr></table></figure><br>    - format<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name &#x3D; &#39;张三&#39;</span><br><span class="line">age &#x3D; 18</span><br><span class="line">print(&quot;&#123;&#125;今年&#123;&#125;岁。&quot;.format(name,age))</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>    占位符的种类<br>        ```<br>        ‘d’   有符号十进制整数。</p>
-<pre><code>    &#39;i&#39;   有符号十进制整数。
-
-    &#39;o&#39;   有符号八进制数。
-
-    &#39;u&#39;   过时类型 -- 等价于 &#39;d&#39;。
-
-    &#39;x&#39;   有符号十六进制数（小写）。
-
-    &#39;X&#39;   有符号十六进制数（大写）。
-
-    &#39;e&#39;   浮点指数格式（小写）。
-
-    &#39;E&#39;   浮点指数格式（大写）。
-
-    &#39;f&#39;   浮点十进制格式。
-
-    &#39;F&#39;   浮点十进制格式。
-
-    &#39;g&#39;   浮点格式。 如果指数小于 -4 或不小于精度则使用小写指数格式，否则使用十进制格式。
-
-    &#39;G&#39;   浮点格式。 如果指数小于 -4 或不小于精度则使用大写指数格式，否则使用十进制格式。
-
-    &#39;c&#39;   单个字符（接受整数或单个字符的字符串）。
-
-    &#39;r&#39;   字符串（使用 repr() 转换任何 Python 对象）。
-
-    &#39;s&#39;   字符串（使用 str() 转换任何 Python 对象）。
-
-    &#39;a&#39;   字符串（使用 ascii() 转换任何 Python 对象）。
-
-    &#39;%&#39;   不转换参数，在结果中输出一个 &#39;%&#39; 字符。
-    ```    
-format的方法
-    &#123;1&#125;&#123;2&#125;&#123;3&#125;调换顺序
-    ```print(&#39;&#123;0&#125; &#123;2&#125; &#123;1&#125;&#39;.format(movie, count, ticket))```实现的为movie, ticket, count.
-    &#123;a&#125;&#123;b&#125;&#123;c&#125;
-    ```print(&#39;&#123;a&#125;&#123;b&#125;&#123;c&#125;&#39;.format(a=&#39;ni&#39;, c=&#39;a&#39;, b=&#39;hao&#39;))```</code></pre>
+<p>格式化输出<br>    - 使用占位符<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age &#x3D; 10</span><br><span class="line">print(&#39;他的年龄是%d&#39; % (age))</span><br></pre></td></tr></table></figure><br>    - format<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name &#x3D; &#39;张三&#39;</span><br><span class="line">age &#x3D; 18</span><br><span class="line">print(&quot;&#123;&#125;今年&#123;&#125;岁。&quot;.format(name,age))</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>    占位符的种类<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#39;d&#39;   有符号十进制整数。</span><br><span class="line">&#39;i&#39;   有符号十进制整数。</span><br><span class="line">&#39;o&#39;   有符号八进制数。</span><br><span class="line">&#39;u&#39;   过时类型 -- 等价于 &#39;d&#39;。</span><br><span class="line">&#39;x&#39;   有符号十六进制数（小写）。</span><br><span class="line">&#39;X&#39;   有符号十六进制数（大写）。</span><br><span class="line">&#39;e&#39;   浮点指数格式（小写）。</span><br><span class="line">&#39;E&#39;   浮点指数格式（大写）。</span><br><span class="line">&#39;f&#39;   浮点十进制格式。</span><br><span class="line">&#39;F&#39;   浮点十进制格式。</span><br><span class="line">&#39;g&#39;   浮点格式。 如果指数小于 -4 或不小于精度则使用小写指数格式，否则使用十进制格式。</span><br><span class="line">&#39;G&#39;   浮点格式。 如果指数小于 -4 或不小于精度则使用大写指数格式，否则使用十进制格式。</span><br><span class="line">&#39;c&#39;   单个字符（接受整数或单个字符的字符串）。</span><br><span class="line">&#39;r&#39;   字符串（使用 repr() 转换任何 Python 对象）。</span><br><span class="line">&#39;s&#39;   字符串（使用 str() 转换任何 Python 对象）。</span><br><span class="line">&#39;a&#39;   字符串（使用 ascii() 转换任何 Python 对象）。</span><br><span class="line">&#39;%&#39;   不转换参数，在结果中输出一个 &#39;%&#39; 字符。</span><br></pre></td></tr></table></figure><br>    format的方法<br>        {1}{2}{3}调换顺序<br>        <code>print(&#39;&#123;0&#125; &#123;2&#125; &#123;1&#125;&#39;.format(movie, count, ticket))</code>实现的为movie, ticket, count.<br>        {a}{b}{c}<br>        <code>print(&#39;&#123;a&#125;&#123;b&#125;&#123;c&#125;&#39;.format(a=&#39;ni&#39;, c=&#39;a&#39;, b=&#39;hao&#39;))</code></p>
 
     </div>
 
